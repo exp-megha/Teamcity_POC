@@ -1,0 +1,124 @@
+<% fieldHelper = (field) -> %>
+              <% switch field.type : %>
+                <% when 'text' : %>
+                    <input placeholder="{{'<%- field.placeholder %>'| translate}}" ng-model="<%- field.controllerAs %>.formData.<%- field.name %>" name="<%- field.name %>" <%- field.validate %> type="text" class="form-control form-textbox" id="<%- field.name %>" <%- field.events %> >
+                    <span class="validation text-danger"></span>
+                <% end %>
+                <% when 'email' : %>
+                    <input placeholder="{{'<%- field.placeholder %>'| translate}}" ng-model="<%- field.controllerAs %>.formData.<%- field.name %>" name="<%- field.name %>" <%- field.validate %> type="email" class="form-control form-textbox" id="<%- field.name %>" <%- field.events %> >
+                     <span class="validation text-danger"></span>
+                <% end %>
+                <% when 'phone' : %>
+                    <input placeholder="{{'<%- field.placeholder %>'| translate}}" ng-model="<%- field.controllerAs %>.formData.<%- field.name %>" name="<%- field.name %>" <%- field.validate %> type="phone" class="form-control form-textbox" id="<%- field.name %>" <%- field.events %>>
+                    <span class="validation text-danger"></span>
+                <% end %>
+                <% when 'date' : %>
+	            <input ng-model="<%- field.controllerAs %>.formData.<%- field.name %>" name="<%- field.name %>" <%- field.validate %> datepicker-popup="yyyy/MM/dd" show-weeks="false" show-button-bar="false" class="form-control form-textbox" id="<%- field.name %>" <%- field.events %> >
+                     <span class="validation text-danger"></span>
+                <% end %>                  
+                <% when 'time' : %>                    
+	            <timepicker ng-model="<%- field.controllerAs %>.formData.<%- field.name %>" <%- field.validate %> class="form-control form-textbox" hour-step="<%- field.controllerAs %>.hstep"  minute-step="<%- field.controllerAs %>.mstep" id="<%- field.name %>" <%- field.events %>></timepicker>
+                     <span class="validation text-danger"></span>
+                <% end %>                
+                <% when 'select' : %>
+                    <select ng-model="<%- field.controllerAs %>.formData.<%- field.name %>" name="<%- field.name %>" <%- field.validate %> ng-options="" id="<%- field.name %>"  class="form-control form-textbox" <%- field.events %>>
+                      <option>---Select---</option>
+                    </select>
+                <% end %>     
+                <% when 'textarea' : %>
+                    <textarea placeholder="{{'<%- field.placeholder %>'| translate}}" ng-model="<%- field.controllerAs %>.formData.<%- field.name %>" name="<%- field.name %>" <%- field.validate %> id="<%- field.name %>" class="form-control form-textbox" rows="3" <%- field.events %>></textarea>
+                    <span class="validation text-danger"></span>                  
+                <% end %>     
+                <% when 'button' : %>
+                    
+                <% end %>                                                 
+              <% end %>            
+<% end %>
+<div> 
+  <form name="<%- @formName %>" ng-submit="onSubmit()">
+     <div class="form-title" translate><%- @formTitle %></div>
+      <% for b in @blocks : %>
+              <div class="panel panel-form">
+                  <div class="panel-heading">
+                    <h3 class="panel-title panel-title-bold" translate><%- b.title %></h3>
+                  </div>
+                  <div class="panel-body">     
+                        <% switch b.blockType : %>
+                            <% when 1 : %>
+                                  <!-- Row-->
+                                  <% Rows= b.rows %>
+                                  <% for row in Rows :  %>
+                                      <div class="col-xs-12">
+                                        <!--  fields -->
+                                        <% Fields=row.fields %>                                                    
+                                        <% for field in Fields :  %>
+                                            <% field.controllerAs= @controllerAs  %>
+                                            <div class="col-sm-4 form-horizontal">
+                                              <div class="form-group">
+                                                <label for="<%- field.name %>" class="col-sm-5 control-label" translate><%- field.label %></label>
+                                                <div class="col-sm-7">                          
+                                                    <%- fieldHelper field %>
+                                                </div>
+                                              </div>
+                                            </div>                          
+                                        <% end %>
+                                        <!-- End fields -->
+                                      </div>
+                                  <% end %>
+                            <% end %>
+                            <% when 2 : %>
+                                  <!-- Row-->
+                                  <% Rows= b.rows %>
+                                  <% for row in Rows :  %>
+                                      <div class="col-xs-12">
+                                        <!--  fields -->
+                                        <% Fields=row.fields %>                                                    
+                                        <% for field in Fields :  %>
+                                            <% field.controllerAs= @controllerAs  %>
+                                            <div class="col-sm-4 form-horizontal">
+                                              <div class="form-group">
+                                                <label for="<%- field.name %>" class="col-sm-5 control-label" translate><%- field.label %></label>
+                                                <div class="col-sm-7">                          
+                                                    <%- fieldHelper field %>
+                                                </div>
+                                              </div>
+                                            </div>                          
+                                        <% end %>
+                                        <!-- End fields -->
+                                      </div>
+                                  <% end %>
+                            <% end %>
+                            <% when 3 : %>
+                                  <!-- Row-->
+                                  <% Rows= b.rows %>
+                                  <% for row in Rows :  %>
+                                      <div class="col-xs-12">
+                                        <!--  fields -->
+                                        <% Fields=row.fields %>                                                    
+                                        <% for field in Fields :  %>
+                                            <% field.controllerAs= @controllerAs  %>
+                                            <div class="col-sm-4 form-horizontal">
+                                              <div class="form-group">
+                                                <label for="<%- field.name %>" class="col-sm-5 control-label" translate><%- field.label %></label>
+                                                <div class="col-sm-7">                          
+                                                    <%- fieldHelper field %>
+                                                </div>
+                                              </div>
+                                            </div>                          
+                                        <% end %>
+                                        <!-- End fields -->
+                                      </div>
+                                  <% end %>
+                            <% end %>          
+                        <% end %>   
+                  </div>
+              </div>
+              <!-- End Panel --> 
+      <% end %>
+      <div class="col-xs-12 text-right no-padding">
+      <% for button in @buttons :  %>
+        <button type="<%- button.type %>" class="btn btn-primary" <%- button.events %>><%- button.value %></button>
+      <% end %>
+    </div>
+  </form>
+</div>

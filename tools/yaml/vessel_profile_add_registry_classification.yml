@@ -1,0 +1,114 @@
+---
+formName: vesselProfileAddRegistryClassificationForm
+templateType: type1
+nextUrl: /{customerId}/vessel/{vesselId}/machinery/{id}
+previousUrl: /{customerId}/vessel/{vesselId}/{vesselId}/particulars/{id}
+submitUrl: /{customerId}/vessel/{vesselId}/classifications/{id}
+errorMessage: errorMessage
+successMessage: successMessage
+module: vesselProfileAddRegistryClassification
+modelObject: vesselProfileAddRegistryClassificationForm
+blocks:
+
+    - blockId: 1 
+      blockType: 3
+      title: Vessel Registry
+    - blockId: 2 
+      blockType: 3
+      title: Classification
+    
+fields: 
+
+    - label: Validity Date
+      type: date
+      name: validityDate
+      placeholder: Validity Date
+      help: Enter Validity Date here
+      blockId: 1      
+      validate: required
+    - label: Certificate Number
+      type: text
+      name: certificateNumber
+      placeholder: Certificate Number
+      help: Enter Certificate Number here
+      blockId: 1
+      validate: required
+    - label: Port of Registry
+      type: text
+      name: portOfRegistry
+      placeholder: Port of Registry
+      help: Enter Port of Registry here
+      blockId: 1
+      validate: required
+    - label: Builder
+      type: text
+      name: builder
+      placeholder: Builder
+      help: Enter Builder here
+      blockId: 1
+      validate: required
+    - label: Owner
+      type: text
+      name: owner
+      placeholder: Owner
+      help: Enter Owner here
+      blockId: 1
+      validate: required
+    - label: Country of Build
+      type: select
+      name: countryOfBuild
+      placeholder: Country of Build
+      help: Enter Country of Build here
+      blockId: 1
+      validate: required
+    - label: Year of Build
+      type: date
+      name: yearOfBuild
+      placeholder: Year of Build
+      help: Enter Year of Build here
+      blockId: 1
+      validate: required
+
+    - label: Hull Classification
+      type: select
+      name: hullClassification
+      placeholder: Hull Classification
+      help: Enter Hull Classification here
+      blockId: 2
+      validate: required
+    - label: Machinery Classification
+      type: text
+      name: machineryClassification
+      placeholder: Machinery Classification
+      help: Enter Machinery Classification here
+      blockId: 2
+      validate: required
+    - label: Classification Notation
+      type: select
+      name: classificationNotation
+      placeholder: Classification Notation
+      help: Enter Classification Notation here
+      blockId: 2 
+      validate: required
+    - label: Classification Society
+      type: select
+      name: classificationSociety
+      placeholder: Classification Society
+      help: Enter Classification Society here
+      blockId: 2
+      validate: required
+
+    - type: submit
+      value: Back
+    - type: reset
+      value: reset
+    - type: submit
+      value: Submit      
+    - type: submit
+      value: Next
+    
+
+
+
+
+

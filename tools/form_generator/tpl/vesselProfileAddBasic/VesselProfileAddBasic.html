@@ -1,0 +1,164 @@
+<div>
+  <form name="vesselProfileAddBasic" ng-submit="onSubmit()">
+     <div class="form-title">Vessel Profile Add Basic</div>
+                    <div class="panel panel-form">
+                  <div class="panel-heading">
+                    <h3 class="panel-title panel-title-bold" translate>Basic Information</h3>
+                  </div>
+                  <div class="panel-body">     
+                                                          <!-- Row-->
+                                                                                                          <div class="col-xs-12">
+                                        <!--  fields -->
+                                                                                            
+                                                                                                                                <div class="col-sm-6 form-horizontal">
+                                              <div class="form-group">
+                                                <label for="vesselName" class="col-sm-5 control-label" translate>Vessel Name</label>
+                                                <div class="col-sm-7">                          
+                                                                                      <input placeholder="{{'Vessel Name'| translate}}" ng-model="vesselProfile.formData.vesselName" name="vesselName" validation="required" type="text" class="form-control form-textbox" id="vesselName"  >
+                    <span class="validation text-danger"></span>
+                            
+                                                </div>
+                                              </div>
+                                            </div>                          
+                                                                                                                                <div class="col-sm-6 form-horizontal">
+                                              <div class="form-group">
+                                                <label for="imoNumber" class="col-sm-5 control-label" translate>Imo Number</label>
+                                                <div class="col-sm-7">                          
+                                                                                      <input placeholder="{{'IMO Number'| translate}}" ng-model="vesselProfile.formData.imoNumber" name="imoNumber" validation="required" type="text" class="form-control form-textbox" id="imoNumber"  >
+                    <span class="validation text-danger"></span>
+                            
+                                                </div>
+                                              </div>
+                                            </div>                          
+                                                                                <!-- End fields -->
+                                      </div>
+                                                                        <div class="col-xs-12">
+                                        <!--  fields -->
+                                                                                            
+                                                                                                                                <div class="col-sm-6 form-horizontal">
+                                              <div class="form-group">
+                                                <label for="callSign" class="col-sm-5 control-label" translate>Call Sign</label>
+                                                <div class="col-sm-7">                          
+                                                                                      <input placeholder="{{'Call Sign'| translate}}" ng-model="vesselProfile.formData.callSign" name="callSign" validation="required" type="text" class="form-control form-textbox" id="callSign"  >
+                    <span class="validation text-danger"></span>
+                            
+                                                </div>
+                                              </div>
+                                            </div>                          
+                                                                                                                                <div class="col-sm-6 form-horizontal">
+                                              <div class="form-group">
+                                                <label for="shippingLine" class="col-sm-5 control-label" translate>Shipping Line</label>
+                                                <div class="col-sm-7">                          
+                                                                                      <select ng-model="vesselProfile.formData.shippingLine" name="shippingLine" validation="required" ng-options="" id="shippingLine"  class="form-control form-textbox" >
+                      <option>---Select---</option>
+                    </select>
+                            
+                                                </div>
+                                              </div>
+                                            </div>                          
+                                                                                <!-- End fields -->
+                                      </div>
+                                                                        <div class="col-xs-12">
+                                        <!--  fields -->
+                                                                                            
+                                                                                                                                <div class="col-sm-6 form-horizontal">
+                                              <div class="form-group">
+                                                <label for="shippingAgent" class="col-sm-5 control-label" translate>Shipping Agent</label>
+                                                <div class="col-sm-7">                          
+                                                                                      <select ng-model="vesselProfile.formData.shippingAgent" name="shippingAgent" validation="required" ng-options="" id="shippingAgent"  class="form-control form-textbox" >
+                      <option>---Select---</option>
+                    </select>
+                            
+                                                </div>
+                                              </div>
+                                            </div>                          
+                                                                                                                                <div class="col-sm-6 form-horizontal">
+                                              <div class="form-group">
+                                                <label for="loa" class="col-sm-5 control-label" translate>Loa</label>
+                                                <div class="col-sm-7">                          
+                                                                                      <input placeholder="{{'LOA'| translate}}" ng-model="vesselProfile.formData.loa" name="loa" validation="required" type="text" class="form-control form-textbox" id="loa"  >
+                    <span class="validation text-danger"></span>
+                            
+                                                </div>
+                                              </div>
+                                            </div>                          
+                                                                                <!-- End fields -->
+                                      </div>
+                                                                        <div class="col-xs-12">
+                                        <!--  fields -->
+                                                                                            
+                                                                                                                                <div class="col-sm-6 form-horizontal">
+                                              <div class="form-group">
+                                                <label for="beam" class="col-sm-5 control-label" translate>Beam</label>
+                                                <div class="col-sm-7">                          
+                                                                                      <input placeholder="{{'Beam'| translate}}" ng-model="vesselProfile.formData.beam" name="beam" validation="required" type="text" class="form-control form-textbox" id="beam"  >
+                    <span class="validation text-danger"></span>
+                            
+                                                </div>
+                                              </div>
+                                            </div>                          
+                                                                                                                                <div class="col-sm-6 form-horizontal">
+                                              <div class="form-group">
+                                                <label for="flag" class="col-sm-5 control-label" translate>Flag</label>
+                                                <div class="col-sm-7">                          
+                                                                                      <select ng-model="vesselProfile.formData.flag" name="flag" validation="required" ng-options="" id="flag"  class="form-control form-textbox" >
+                      <option>---Select---</option>
+                    </select>
+                            
+                                                </div>
+                                              </div>
+                                            </div>                          
+                                                                                <!-- End fields -->
+                                      </div>
+                                                                        <div class="col-xs-12">
+                                        <!--  fields -->
+                                                                                            
+                                                                                                                                <div class="col-sm-6 form-horizontal">
+                                              <div class="form-group">
+                                                <label for="typeOfVessel" class="col-sm-5 control-label" translate>Type Of Vessel</label>
+                                                <div class="col-sm-7">                          
+                                                                                      <select ng-model="vesselProfile.formData.typeOfVessel" name="typeOfVessel" validation="required" ng-options="" id="typeOfVessel"  class="form-control form-textbox" >
+                      <option>---Select---</option>
+                    </select>
+                            
+                                                </div>
+                                              </div>
+                                            </div>                          
+                                                                                                                                <div class="col-sm-6 form-horizontal">
+                                              <div class="form-group">
+                                                <label for="mmsi" class="col-sm-5 control-label" translate>Mmsi</label>
+                                                <div class="col-sm-7">                          
+                                                                                      <input placeholder="{{'MMSI'| translate}}" ng-model="vesselProfile.formData.mmsi" name="mmsi" validation="required" type="text" class="form-control form-textbox" id="mmsi"  >
+                    <span class="validation text-danger"></span>
+                            
+                                                </div>
+                                              </div>
+                                            </div>                          
+                                                                                <!-- End fields -->
+                                      </div>
+                                                                        <div class="col-xs-12">
+                                        <!--  fields -->
+                                                                                            
+                                                                                                                                <div class="col-sm-6 form-horizontal">
+                                              <div class="form-group">
+                                                <label for="airDraught" class="col-sm-5 control-label" translate>Air Draught</label>
+                                                <div class="col-sm-7">                          
+                                                                                      <textarea placeholder="{{'Air Draught'| translate}}" ng-model="vesselProfile.formData.airDraught" name="airDraught" validation="required" id="airDraught" class="form-control form-textbox" rows="3" ></textarea>
+                    <span class="validation text-danger"></span>                  
+                            
+                                                </div>
+                                              </div>
+                                            </div>                          
+                                                                                <!-- End fields -->
+                                      </div>
+                                                                 
+                  </div>
+              </div>
+              <!-- End Panel --> 
+            <div class="col-xs-12 text-right no-padding">
+              <button type="button" class="btn btn-primary" ng-click="onReset">Reset</button>
+              <button type="submit" class="btn btn-primary" >Submit</button>
+              <button type="submit" class="btn btn-primary" >Next</button>
+          </div>
+  </form>
+</div>

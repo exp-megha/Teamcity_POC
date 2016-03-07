@@ -1,0 +1,10 @@
+{
+  "version":"0.1",
+  "db": {
+    "host": "",
+    "name":"",
+    "port":,
+    "user":"",
+    "pass":""
+  }
+}

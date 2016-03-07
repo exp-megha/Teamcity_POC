@@ -1,0 +1,15 @@
+{
+    "templatePaths": [
+
+        {
+            "tplName": "type1",
+            "tplFolder": "templates/views/type1"
+            
+        },
+        {
+            "tplName": "type2",
+            "tplFolder": "templates/views/type2"
+            
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+---
+formName: vesselProfileAddBasic
+templateType: type1
+nextUrl: /{customerId}/vessel/{vesselId}/{vesselId}/particulars/{id}
+submitUrl: /{customerId}/ vessel/{vesselId}/{vesselId}/basic/
+errorMessage: errorMessage
+successMessage: successMessage
+module: vessel
+controllerAs: vesselProfile
+blocks:
+
+    - blockId: 1 
+      blockType: 2
+      title: Basic Information
+    
+fields: 
+
+    - label: Vessel Name
+      type: text
+      name: vesselName
+      placeholder: Vessel Name
+      help: Enter Vessel Name here
+      blockId: 1      
+      validate: required
+
+    - label: IMO Number
+      type: text
+      name: imoNumber
+      placeholder: IMO Number
+      help: Enter IMO Number here
+      blockId: 1
+      validate: required
+
+    - label: Call Sign
+      type: text
+      name: callSign
+      placeholder: Call Sign
+      help: Enter Call Sign here
+      blockId: 1
+      validate: required
+
+    - label: Shipping Line
+      type: select
+      name: shippingLine
+      placeholder: Shipping Line
+      help: Enter Shipping Line here
+      blockId: 1
+      validate: required
+
+    - label: Shipping Agent
+      type: select
+      name: shippingAgent
+      placeholder: Shipping Agent
+      help: Enter Shipping Agent here
+      blockId: 1
+      validate: required
+
+    - label: LOA
+      type: text
+      name: loa
+      placeholder: LOA
+      help: Enter LOA here
+      blockId: 1
+      validate: required
+
+    - label: Beam
+      type: text
+      name: beam
+      placeholder: Beam
+      help: Enter Beam here
+      blockId: 1
+      validate: required
+
+    - label: Flag
+      type: select
+      name: flag
+      placeholder: Flag
+      help: Enter Flag here
+      blockId: 1  
+      validate: required
+
+    - label: Type of Vessel
+      type: select
+      name: typeOfVessel
+      placeholder: Type of Vessel
+      help: Enter Type of Vessel here
+      blockId: 1 
+      validate: required
+
+    - label: MMSI
+      type: text
+      name: mmsi
+      placeholder: MMSI
+      help: Enter MMSI here
+      blockId: 1  
+      validate: required
+      
+    - label: Air Draught
+      type: textarea
+      name: airDraught
+      placeholder: Air Draught
+      help: Enter Air Draught here
+      blockId: 1
+      validate: required
+
+buttons:
+    - type: reset
+      value: Reset
+    - type: submit
+      value: Submit      
+    - type: submit
+      value: Next
+    
+
+
+
+
+

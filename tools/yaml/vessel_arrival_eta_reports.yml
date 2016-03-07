@@ -1,0 +1,62 @@
+---
+formName: vesselArrivalEtaReportsForm
+templateType: type1
+submitUrl: /{customerId}/vessel/{vesselId}/etaReport
+errorMessage: errorMessage
+successMessage: successMessage
+module: vesselArrivalEtaReports
+modelObject: vesselArrivalEtaReportsForm
+blocks:
+
+    - blockId: 1 
+      blockType: 2
+      title: Add New ETA (Estimated Time of Arrival)  
+    
+fields: 
+
+    - label: Vessel Name
+      type: select
+      name: Vessel Name
+      placeholder: vesselName
+      help: Enter Vessel Name here
+      blockId: 1     
+      onClick: onVesselChange 
+      validate: required
+    - label: Voyage Number
+      type: select
+      name: voyageNumber
+      placeholder: Voyage Number
+      help: Enter Voyage Number here
+      blockId: 1
+      validate: required
+    - label: VCN
+      type: text
+      name: vcn
+      placeholder: VCN
+      help: Enter VCN here
+      blockId: 1
+      validate: required
+    - label: Date
+      type: date
+      name: date
+      placeholder: Date
+      help: Enter Date here
+      blockId: 1
+      validate: required
+    - label: Time
+      type: time
+      name: time
+      placeholder: Time
+      help: Enter Time here
+      blockId: 1
+      validate: required    
+    
+    - type: submit
+      value: Submit      
+   
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+---
+formName: vesselRadioLogForm
+templateType: type1
+submitUrl: /{customerId}/vessel/{vesselId}/vesseRadiolLog
+errorMessage: errorMessage
+successMessage: successMessage
+module: vesselRadioLog
+modelObject: vesselRadioLogForm
+blocks:
+   
+    - blockId: 1
+      blockType: 2
+      title: Vessel Radio Log Details    
+    
+fields: 
+
+    - label: Vessel Name
+      type: select
+      name: Vessel Name
+      placeholder: vesselName
+      help: Enter Vessel Name here
+      blockId: 1     
+      onClick: onVesselChange 
+      validate: required
+    - label: Voyage Number
+      type: select
+      name: voyageNumber
+      placeholder: Voyage Number
+      help: Enter Voyage Number here
+      blockId: 1
+      validate: required
+    - label: VCN
+      type: text
+      name: vcn
+      placeholder: VCN
+      help: Enter VCN here
+      blockId: 1
+      validate: required
+    - label: Date
+      type: date
+      name: date
+      placeholder: Date
+      help: Enter Date here
+      blockId: 1
+      validate: required    
+    - label: Log
+      type: textarea
+      name: log
+      placeholder: Log
+      help: Enter Log here
+      blockId: 1
+      validate: required
+    
+    - type: submit
+      value: Submit      
+   
+
+
+
+
+
+

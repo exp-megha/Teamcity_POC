@@ -1,0 +1,223 @@
+---
+formName: imoGeneralDeclarationForm
+templateType: type1
+nextUrl: --
+submitUrl: /customerId/vessel/uploadGeneral Declaration
+errorMessage: errorMessage
+successMessage: successMessage
+module: imoGeneralDeclaration
+modelObject: imoGeneralForm
+blocks:
+
+    - blockId: 1 
+      blockType: 3
+      title: Vessel Details
+    - blockId: 2
+      blockType: 3
+      title: Certificate of Registry
+fields: 
+
+    - label: Vessel Name
+      type: select
+      name: vesselName
+      placeholder: Vessel Name
+      help: Enter Vessel Name here
+      blockId: 1
+      onClick: onVesselNameChange
+      validate: required
+    - label: Voyage Number
+      type: select
+      name: voyageNumber
+      placeholder: Voyage Number
+      help: Enter Voyage Number here
+      blockId: 1
+      onClick: onVoyageNumberChange
+      validate: required
+    - label: VCN
+      type: text
+      name: vcn
+      placeholder: VCN
+      help: Enter VCN here
+      blockId: 1    
+      validate: required
+    - label: IMO Number
+      type: text
+      name: imoNumber
+      placeholder: IMO Number
+      help: Enter IMO Number here
+      blockId: 1
+      validate: required
+    - label: Call Sign
+      type: text
+      name: callSign
+      placeholder: Call Sign
+      help: Enter Call Sign here
+      blockId: 1
+      validate: required
+    - label: Flag
+      type: select
+      name: flag
+      placeholder: Flag
+      help: Enter Flag here
+      blockId: 1
+      validate: required
+    - label: Port of Arrival
+      type: select
+      name: portOfArrival
+      placeholder: Port of Arrival
+      help: Enter Port of Arrival here
+      blockId: 1
+      validate: required
+    - label: Date of Arrival
+      type: date
+      name: dateOfArrival
+      placeholder: Date of Arrival
+      help: Enter Date of Arrival here
+      blockId: 1
+      validate: required
+    - label: Time of Arrival
+      type: text
+      name: timeOfArrival
+      placeholder: Time of Arrival
+      help: Enter Time of Arrival here
+      blockId: 1
+      validate: required
+    - label: Name of Master
+      type: select
+      name: nameOfMaster
+      placeholder: Name of Master
+      help: Enter Name of Master here
+      blockId: 1  
+      validate: required
+    - label: Last Port of Call
+      type: select
+      name: lastPortOfCalll
+      placeholder: Last Port of Call
+      help: Enter Last Port of Call here
+      blockId: 1 
+      validate: required
+    - label: Shipping Agent
+      type: text
+      name: shippingAgent
+      placeholder: Shipping Agent
+      help: Enter Shipping Agent here
+      blockId: 1  
+      validate: required
+    - label: Contact Details
+      type: textarea
+      name: contactDetails
+      placeholder: Contact Details
+      help: Enter Contact Details here
+      blockId: 1
+      validate: required
+
+    - label: Port of Arrival
+      type: select
+      name: portOfArrival
+      placeholder: Port of Arrival
+      help: Enter Port of Arrival here
+      blockId: 2
+      validate: required
+    - label: Date of Arrival
+      type: date
+      name: dateOfArrival
+      placeholder: Date of Arrival
+      help: Enter Date of Arrival here
+      blockId: 2
+      validate: required
+    - label: Time of Arrival
+      type: time
+      name: timeOfArrival
+      placeholder: Time of Arrival
+      help: Enter Time of Arrival here
+      blockId: 2   
+      validate: required 
+    - label: Ship Position in Port
+      type: text
+      name: shipPositionInPort
+      placeholder: Ship Position in Port
+      help: Enter Ship Position in Port here
+      blockId: 2
+      validate: required
+    - label: Particulars of Voyage
+      type: textarea
+      name: particularsOfVoyage
+      placeholder: Particulars of Voyage
+      help: Enter Particulars of Voyage here
+      blockId: 2
+      validate: required
+    - label: Brief Description of Cargo
+      type: textarea
+      name: briefDescriptionOfCargo
+      placeholder: Brief Description of Cargo
+      help: Enter Brief Description of Cargo here
+      blockId: 2
+      validate: required
+    - label: Number of Crew
+      type: select
+      name: numberOfCrew
+      placeholder: Number of Crew
+      help: Enter Number of Crew here
+      blockId: 2
+      validate: required
+    - label: Number of Passengers
+      type: select
+      name: numberOfPassengers
+      placeholder: Number of Passengers
+      help: Enter Number of Passengers here
+      blockId: 2
+      validate: required
+    - label: Gross Tonnage
+      type: text
+      name: grossTonnage
+      placeholder: Gross Tonnage
+      help: Enter Gross Tonnage here
+      blockId: 2
+      validate: required
+    - label: Net Tonnage
+      type: text
+      name: netTonnage
+      placeholder: Net Tonnage
+      help: Enter Net Tonnage here
+      blockId: 2  
+      validate: required
+    - label: Ship Requirements
+      type: textarea
+      name: shipRequirements
+      placeholder: Ship Requirements
+      help: Enter Ship Requirements here
+      blockId: 2 
+      validate: required
+    - label: Maritime Declaration of Health
+      type: textarea
+      name: maritimeDeclarationOfHealth
+      placeholder: Maritime Declaration of Health
+      help: Enter Maritime Declaration of Health here
+      blockId: 2  
+      validate: required
+    - label: Time
+      type: time
+      name: time
+      placeholder: Time
+      help: Enter Time here
+      blockId: 2
+      validate: required
+    - label: Remarks
+      type: textarea
+      name: remarks
+      placeholder: Remarks
+      help: Enter Remarks here
+      blockId: 2  
+      validate: required
+
+    - type: submit
+      value: Print      
+    - type: submit
+      value: Upload Excel
+    - type: submit
+      value: Save
+
+
+
+
+

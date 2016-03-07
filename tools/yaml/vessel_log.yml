@@ -1,0 +1,88 @@
+---
+formName: vesselLogForm
+templateType: type1
+submitUrl: /{customerId}/vessel/{vesselId}/vesselLog
+errorMessage: errorMessage
+successMessage: successMessage
+module: vesselLog
+modelObject: vesselLogForm
+blocks:
+
+    - blockId: 1 
+      blockType: 2
+      title: 
+    - blockId: 2
+      blockType: 2
+      title: Vessel Log Details
+    
+    
+fields: 
+
+    - label: Vessel Name
+      type: select
+      name: Vessel Name
+      placeholder: vesselName
+      help: Enter Vessel Name here
+      blockId: 1     
+      onClick: onVesselChange 
+      validate: required
+    - label: IMO Number
+      type: text
+      name: imoNumber
+      placeholder: IMO Number
+      help: Enter IMO Number here
+      blockId: 1
+      validate: required
+    - label: Voyage Number
+      type: select
+      name: voyageNumber
+      placeholder: Voyage Number
+      help: Enter Voyage Number here
+      blockId: 1
+      validate: required
+    - label: VCN
+      type: text
+      name: vcn
+      placeholder: VCN
+      help: Enter VCN here
+      blockId: 1
+      validate: required
+
+    - label: Type of Time
+      type: select
+      name: typeOfTime
+      placeholder: Type of Time
+      help: Enter Type of Time here
+      blockId: 2
+      validate: required
+    - label: Date
+      type: date
+      name: date
+      placeholder: Date
+      help: Enter Date here
+      blockId: 2
+      validate: required
+    - label: Time
+      type: time
+      name: time
+      placeholder: Time
+      help: Enter Time here
+      blockId: 2
+      validate: required
+    - label: Remarks
+      type: textarea
+      name: remarks
+      placeholder: Remarks
+      help: Enter Remarks here
+      blockId: 2
+      validate: required
+    
+    - type: submit
+      value: Submit      
+   
+
+
+
+
+
+

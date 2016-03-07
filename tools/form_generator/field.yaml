@@ -1,0 +1,201 @@
+---
+formName: vesselArrivalNotification
+templateType: type1
+submitUrl: customer/{customerId}/vessel/{vesselId}/arrivalNotification
+errorMessage: errorMessage
+successMessage: successMessage
+module: vessel
+controllerAs: arrivalNotification
+blocks:
+
+    - blockId: 1 
+      blockType: 2
+      title: Vessel Details
+    - blockId: 2
+      blockType: 2
+      title: ETA (Estimated Time of Arrival)
+    - blockId: 3
+      blockType: 2
+      title: ETD (Estimated Time of Departure)
+    - blockId: 4
+      blockType: 3
+      title: Voyage Details
+    
+fields: 
+
+    - label: Vessel Name
+      type: select
+      name: Vessel Name
+      placeholder: vesselName
+      help: Enter Vessel Name here
+      blockId: 1     
+      onClick: onVesselChange 
+      validate: required
+    - label: IMO Number
+      type: text
+      name: imoNumber
+      placeholder: IMO Number
+      help: Enter IMO Number here
+      blockId: 1
+      validate: required
+    - label: Call Sign
+      type: text
+      name: callSign
+      placeholder: Call Sign
+      help: Enter Call Sign here
+      blockId: 1
+      validate: required
+    - label: Sipping Line
+      type: select
+      name: sippingLine
+      placeholder: Sipping Line
+      help: Enter Sipping Line here
+      blockId: 1
+      validate: required
+    - label: Sipping Agent
+      type: select
+      name: sippingAgent
+      placeholder: Sipping Agent
+      help: Enter Sipping Agent Speed here
+      blockId: 1
+      validate: required
+    - label: LOA
+      type: text
+      name: loa
+      placeholder: LOA
+      help: Enter LOA here
+      blockId: 1
+      validate: required
+    - label: Beam
+      type: select
+      name: beam
+      placeholder: Beam
+      help: Enter Beam here
+      blockId: 1
+      validate: required
+    - label: Flag
+      type: select
+      name: flag
+      placeholder: Flag
+      help: Enter Flag here
+      blockId: 1
+      validate: required
+    - label: Type of Vessel
+      type: select
+      name: typeOfVessel
+      placeholder: Type of Vessel
+      help: Enter Type of Vessel here
+      blockId: 1
+      validate: required
+
+    - label: Date
+      type: date
+      name: date
+      placeholder: Date
+      help: Enter Date here
+      blockId: 2
+      validate: required
+    - label: Time
+      type: time
+      name: time
+      placeholder: Time
+      help: Enter Time here
+      blockId: 2
+      validate: required
+
+    - label: Date
+      type: date
+      name: date
+      placeholder: Date
+      help: Enter Date here
+      blockId: 3
+      validate: required
+    - label: Time
+      type: time
+      name: time
+      placeholder: Time
+      help: Enter Time here
+      blockId: 3
+      validate: required
+
+    - label: Port of Call
+      type: text
+      name: portOfCall
+      placeholder: Port of Call
+      help: Enter Port of Call here
+      blockId: 1
+      validate: required
+    - label: Facility
+      type: select
+      name: facility
+      placeholder: Facility
+      help: Enter Facility here
+      blockId: 1
+      validate: required
+    - label: Operator
+      type: select
+      name: operator
+      placeholder: Operator
+      help: Enter Operator here
+      blockId: 1
+      validate: required
+    - label: Inbound Voyage Number
+      type: text
+      name: inboundVoyageNumber
+      placeholder: Inbound Voyage Number
+      help: Enter Inbound Voyage Number here
+      blockId: 1
+      validate: required
+    - label: Outbound Voyage Number
+      type: text
+      name: outboundVoyageNumber
+      placeholder: Outbound Voyage Number
+      help: Enter Outbound Voyage Number here
+      blockId: 1
+      validate: required
+    - label: Cargo Agent
+      type: select
+      name: cargoAgent
+      placeholder: Cargo Agent
+      help: Enter Cargo Agent here
+      blockId: 1
+      validate: required
+    - label: More Cargo Agent
+      type: select
+      name: moreCargoAgent
+      placeholder: More Cargo Agent
+      help: Enter More Cargo Agent here
+      blockId: 1
+      validate: required
+    - label: Purpose of Visit 
+      type: select
+      name: purposeOfVisit
+      placeholder: Purpose of Visit
+      help: Enter Purpose of Visit here
+      blockId: 1
+      validate: required
+    - label: Service
+      type: text
+      name: service
+      placeholder: Service
+      help: Enter Service here
+      blockId: 1
+      validate: required
+buttons:    
+    - type: reset
+      value: Reset
+      
+    - type: button
+      value: Print
+      onClick: onPrint   
+    - type: button
+      value: Print
+      onClick: onPrint1   
+    - type: submit
+      value: Submit      
+   
+
+
+
+
+

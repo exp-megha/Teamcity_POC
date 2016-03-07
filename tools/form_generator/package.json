@@ -1,0 +1,11 @@
+{
+  "name": "FormGenerator",
+  "version": "0.0.0",
+  "dependencies": {
+    "change-case": "^2.1.4",
+    "ect": "^0.5.9",
+    "node-fs": "^0.1.7",
+    "path": "^0.4.9",
+    "yamljs": "^0.1.6"
+  }
+}

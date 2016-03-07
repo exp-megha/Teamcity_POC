@@ -1,0 +1,110 @@
+---
+formName: vesselProfileAddMachineryForm
+templateType: type1
+nextUrl: /{customerId}/vessel/{vesselId}/cargo/{id}/ship_type
+previousUrl: /{customerId}/vessel/{vesselId}/classifications/{id}
+submitUrl: /{customerId}/vessel/{vesselId}/machinery/{id}
+errorMessage: errorMessage
+successMessage: successMessage
+module: vesselProfileAddMachinery
+modelObject: vesselProfileAddMachineryForm
+blocks:
+
+    - blockId: 1 
+      blockType: 3
+      title: Vessel Registry
+    
+fields: 
+
+    - label: Engine Type
+      type: text
+      name: engineType
+      placeholder: Engine Type
+      help: Enter Engine Type here
+      blockId: 1      
+      validate: required
+    - label: Engine Power
+      type: text
+      name: enginePower
+      placeholder: Engine Power
+      help: Enter Engine Power here
+      blockId: 1
+      validate: required
+    - label: Maximum Speed
+      type: text
+      name: maximumSpeed
+      placeholder: Maximum Speed
+      help: Enter Maximum Speed here
+      blockId: 1
+      validate: required
+    - label: Sailing Speed
+      type: text
+      name: sailingSpeed
+      placeholder: Sailing Speed
+      help: Enter Sailing Speed here
+      blockId: 1
+      validate: required
+    - label: No.of Propellers
+      type: select
+      name: noOfPropellers
+      placeholder: No.of Propellers
+      help: Enter No.of Propellers here
+      blockId: 1
+      validate: required
+    - label: Propeller 1
+      type: select
+      name: propeller1
+      placeholder: Propeller 1
+      help: Enter Propeller 1 here
+      blockId: 1
+      validate: required
+    - label: Propeller 2
+      type: select
+      name: propeller2
+      placeholder: Propeller 2
+      help: Enter Propeller 2 here
+      blockId: 1
+      validate: required
+    - label: Azipod
+      type: select
+      name: azipod
+      placeholder: Azipod
+      help: Enter Azipod here
+      blockId: 1
+      validate: required
+    - label: Pitch
+      type: select
+      name: pitch
+      placeholder: Pitch
+      help: Enter Pitch here
+      blockId: 1
+      validate: required
+    - label: Bow Thruster
+      type: select
+      name: bowThruster
+      placeholder: Bow Thruster
+      help: Enter Bow Thruster here
+      blockId: 1
+      validate: required
+    - label: Stern Thruster
+      type: select
+      name: sternThruster
+      placeholder: Stern Thruster
+      help: Enter Stern Thruster here
+      blockId: 1
+      validate: required
+
+    - type: submit
+      value: Back
+    - type: reset
+      value: reset
+    - type: submit
+      value: Submit      
+    - type: submit
+      value: Next
+
+
+
+
+
+

@@ -1,0 +1,188 @@
+---
+formName: vesselProfileAddParticularsForm
+templateType: type1
+nextUrl: /{customerId}/vessel/{vesselId}/classifications/{id}
+previousUrl: /{customerId}/ vessel/{vesselId}/{vesselId}/basic/{id}
+submitUrl: /{customerId}/vessel/{vesselId}/{vesselId}/particulars/{id}
+errorMessage: errorMessage
+successMessage: successMessage
+module: vesselProfileAddParticulars
+modelObject: vesselProfileAddParticularsForm
+blocks:
+
+    - blockId: 1 
+      blockType: 3
+      title: Vessel Particulars
+    - blockId: 2 
+      blockType: 2
+      title: Dimension
+    - blockId: 3
+      blockType: 2
+      title: Tank Capacity
+    
+fields: 
+
+    - label: INMARSAT
+      type: text
+      name: inmarsat
+      placeholder: INMARSAT
+      help: Enter INMARSAT here
+      blockId: 1      
+      validate: required
+    - label: ISPS Complaince
+      type: select
+      name: ispsComplaince
+      placeholder: ISPS Complaince
+      help: Enter ISPS Complaince here
+      blockId: 1
+      validate: required
+    - label: Vessel Mobile Number
+      type: text
+      name: vesselMobileNumber
+      placeholder: Vessel Mobile Number
+      help: Enter Vessel Mobile Number here
+      blockId: 1
+      validate: required
+    - label: Vessel Email
+      type: text
+      name: vesselEmail
+      placeholder: Vessel Email
+      help: Enter Vessel Email here
+      blockId: 1
+      validate: required
+
+    - label: Depth Moulded
+      type: text
+      name: depthMoulded
+      placeholder: Depth Moulded
+      help: Enter Depth Moulded here
+      blockId: 2
+      validate: required
+    - label: Design Draught
+      type: text
+      name: designDraught
+      placeholder: Design Draught
+      help: Enter Design Draught here
+      blockId: 2
+      validate: required
+    - label: Gross Register Tonnage(GRT)
+      type: text
+      name: grossRegisterTonnage
+      placeholder: Gross Register Tonnage
+      help: Enter Gross Register Tonnage here
+      blockId: 2
+      validate: required
+    - label: Reduced GRT
+      type: text
+      name: reducedGRT
+      placeholder: Reduced GRT
+      help: Enter Reduced GRT here
+      blockId: 2
+      validate: required
+    - label: Net Register Tonnage(NRT)
+      type: text
+      name: netRegisterTonnage
+      placeholder: Net Register Tonnage
+      help: Enter Net Register Tonnage here
+      blockId: 2
+      validate: required
+    - label: Dead Weight Tonnage(DWT)
+      type: text
+      name: deadWeightTonnage
+      placeholder: Dead Weight Tonnage
+      help: Enter Dead Weight Tonnage here
+      blockId: 2 
+      validate: required
+    - label: Summer Dead Weight
+      type: text
+      name: summerDeadWeight
+      placeholder: Summer Dead Weight
+      help: Enter Summer Dead Weight here
+      blockId: 2
+      validate: required
+    - label: Keel To Masthead(KTM)
+      type: text
+      name: keelToMasthead
+      placeholder: Keel To Masthead
+      help: Enter Keel To Masthead here
+      blockId: 2
+      validate: required
+    - label: Length Between Perpendiculars(LPP)
+      type: text
+      name: lengthBetweenPerpendiculars
+      placeholder: Length Between Perpendiculars
+      help: Enter Length Between Perpendiculars here
+      blockId: 2
+      validate: required
+    - label: Keel To Masthead(KTM)
+      type: text
+      name: keelToMasthead
+      placeholder: Keel To Masthead
+      help: Enter Keel To Masthead here
+      blockId: 2
+      validate: required
+    - label: Distance Bow to Manifold
+      type: text
+      name: distanceBowToManifold
+      placeholder: Distance Bow to Manifold
+      help: Enter Distance Bow to Manifold here
+      blockId: 2
+      validate: required
+    - label: Distance Stern to Manifold
+      type: text
+      name: distanceSternToManifold
+      placeholder: Distance Stern to Manifold
+      help: Enter Distance Stern to Manifold here
+      blockId: 2
+      validate: required
+
+    - label: Ballast Water
+      type: text
+      name: ballastWater
+      placeholder: Ballast Water
+      help: Enter Ballast Water here
+      blockId: 3      
+      validate: required
+    - label: Fuel Capacity
+      type: text
+      name: fuelCapacity
+      placeholder: Fuel Capacity
+      help: Enter Fuel Capacity here
+      blockId: 3    
+      validate: required
+    - label: Heavy Fuel
+      type: text
+      name: heavyFuel
+      placeholder: Heavy Fuel
+      help: Enter Heavy Fuel here
+      blockId: 3    
+      validate: required
+    - label: Lub Oil
+      type: text
+      name: lubOil
+      placeholder: Lub Oil
+      help: Enter Lub Oil here
+      blockId: 3     
+      validate: required
+    - label: Fresh Water
+      type: text
+      name: freshWater
+      placeholder: Fresh Water
+      help: Enter Fresh Water here
+      blockId: 3     
+      validate: required
+
+    - type: submit
+      value: Back
+    - type: reset
+      value: reset
+    - type: submit
+      value: Submit      
+    - type: submit
+      value: Next
+    
+
+
+
+
+

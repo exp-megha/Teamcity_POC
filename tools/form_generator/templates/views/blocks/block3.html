@@ -1,0 +1,54 @@
+<div class="panel panel-form">
+	<div class="panel-heading">
+		<h3 class="panel-title panel-title-bold"><%- b.title %></h3>
+	</div>
+	<div class="panel-body">
+		<!-- Row 2-->
+		<% Rows= b.rows %>
+
+		<% for row in Rows :  %>
+			<div class="col-xs-12">
+				<!--  field -->
+
+				<% Fields=row.fields %>
+				            
+				<% for field in Fields :  %>
+					<div class="col-sm-4 form-horizontal">
+						<div class="form-group">
+							<label for="vessel-name" class="col-sm-5 control-label"><%- @field.label %></label>
+							<div class="col-sm-7">
+						        <% switch field.type : %>
+						          <% when 'text' : %>
+						            <% include '../field_templates/textbox.html' %>
+						          <% end %>
+						          <% when 'email' : %>
+						            <% include '../field_templates/email.html' %>
+						          <% end %>
+						          <% when 'phone' : %>
+						            <% include '../field_templates/phone.html' %>
+						          <% end %>
+						          <% when 'select' : %>
+						            <% include '../field_templates/select.html' %>
+						          <% end %>			
+						          <% when 'textarea' : %>
+						            <% include '../field_templates/textarea.html' %>
+						          <% end %>			
+						          <% when 'button' : %>
+						            <% include '../field_templates/button.html' %>
+						          <% end %>				          			          			          
+						        <% end %>  								
+						        								        
+							</div>
+						</div>
+					</div>
+
+				<% end %>
+				<!-- End field -->
+
+
+			</div>
+		<!-- End Row 2 -->
+		<% end %>
+	</div>
+</div>
+<!-- End Panel 3--> 

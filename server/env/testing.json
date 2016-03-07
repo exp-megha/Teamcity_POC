@@ -1,0 +1,11 @@
+{
+    "version": "0.1",
+    "project_name": "palaverplace",
+    "db": {
+        "host": "localhost",
+        "name": "palaverplace",
+        "port": 27017,
+        "user": "palaverplace_user",
+        "pass": "password"
+    }
+}

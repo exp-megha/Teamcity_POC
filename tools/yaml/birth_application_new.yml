@@ -1,0 +1,244 @@
+---
+formName: createBerthApplication
+templateType: type1
+submitUrl: customer/{customerId}/vessel/{vesselId}/berthApplication
+errorMessage: Error Occured in  Create Berth Application
+successMessage: Sucessfully Berth Application is created
+module: vessel
+controllerAS: berthApplication
+blocks:
+   
+    - blockId: 1
+      blockType: 3
+      title: 
+    - blockId: 2
+      blockType: 2
+      title: ETA (Estimated Time of Arrival)
+    - blockId: 3
+      blockType: 2
+      title: ETD (Estimated Time of Departure) 
+    - blockId: 4
+      blockType: 2
+      title: Vessel Details   
+    - blockId: 5
+      blockType: 4
+      title: Additional Services
+    - blockId: 6
+      blockType: 2
+      title: Document Detail  
+    - blockId: 7
+      blockType: 2
+      title: Document Present
+    
+fields: 
+
+    - label: Vessel Name
+      type: select
+      name: Vessel Name
+      placeholder: vesselName
+      help: Enter Vessel Name here
+      blockId: 1     
+      onClick: onVesselChange 
+      validate: required
+    - label: Voyage Number
+      type: select
+      name: voyageNumber
+      placeholder: Voyage Number
+      help: Enter Voyage Number here
+      blockId: 1
+      validate: required
+    - label: VCN
+      type: text
+      name: vcn
+      placeholder: VCN
+      help: Enter VCN here
+      blockId: 1
+      validate: required
+
+    - label: Date
+      type: date
+      name: date
+      placeholder: Date
+      help: Enter Date here
+      blockId: 2
+      validate: required   
+    - label: Time
+      type: time
+      name: time
+      placeholder: Time
+      help: Enter Time here
+      blockId: 2
+      validate: required   
+
+    - label: Date
+      type: date
+      name: date
+      placeholder: Date
+      help: Enter Date here
+      blockId: 3
+      validate: required   
+    - label: Time
+      type: time
+      name: time
+      placeholder: Time
+      help: Enter Time here
+      blockId: 3
+      validate: required  
+
+    - label: Total People on Board
+      type: select
+      name: totalPeopleOnBoard
+      placeholder: Total People on Board
+      help: Enter Total People on Board here
+      blockId: 4
+      validate: required   
+    - label: Number of Crew
+      type: select
+      name: numberOfCrew
+      placeholder: Number of Crew
+      help: Enter Number of Crew here
+      blockId: 4
+      validate: required 
+    - label: Name of Master
+      type: select
+      name: nameOfMaster
+      placeholder: Name of Master
+      help: Enter Name of Master here
+      blockId: 4
+      validate: required   
+    - label: Vessel Position
+      type: select
+      name: vesselPosition
+      placeholder: Vessel Position
+      help: Enter Vessel Position here
+      blockId: 4
+      validate: required  
+    - label: Preferred
+      type: select
+      name: preferred
+      placeholder: Preferred
+      help: Enter Preferred here
+      blockId: 4
+      validate: required
+
+    - label: Water Service
+      type: checkbox
+      name: waterService
+      placeholder: 
+      help: Enter Water Service here
+      blockId: 5
+      validate: required 
+    - label: Waste Disposal
+      type: checkbox
+      name: wasteDisposal
+      placeholder: 
+      help: Enter Waste Disposal here
+      blockId: 5
+      validate: required   
+    - label: Bunker Supply
+      type: checkbox
+      name: bunkerSupply
+      placeholder: 
+      help: Enter Bunker Supply here
+      blockId: 5
+      validate: required  
+    - label: Other Services
+      type: checkbox
+      name: otherServices
+      placeholder: 
+      help: Enter Other Services here
+      blockId: 5
+      validate: required   
+
+    - label: Dangerous Goods
+      type: select
+      name: dangerousGoods
+      placeholder: Dangerous Goods
+      help: Enter Dangerous Goods here
+      blockId: 6
+      validate: required  
+    - label: Passenger List
+      type: select
+      name: passengerList
+      placeholder: Passenger List
+      help: Enter Passenger List here
+      blockId: 6
+      validate: required  
+    - label: Crew List
+      type: select
+      name: crewList
+      placeholder: Crew List
+      help: Enter Crew List here
+      blockId: 6
+      validate: required  
+
+    - label: IMO General Declaration
+      type: checkbox
+      name: imoGeneralDeclaration
+      placeholder: 
+      help: Enter IMO General Declaration here
+      blockId: 7
+      validate: required 
+    - label: IMO Cargo Declaration
+      type: checkbox
+      name: imoCargoDeclaration
+      placeholder: 
+      help: Enter IMO Cargo Declaration here
+      blockId: 7
+      validate: required   
+    - label: IMO Ship's Stores Declaration
+      type: checkbox
+      name: imoShipsStoresDeclaration
+      placeholder: 
+      help: Enter IMO Ship's Stores Declaration here
+      blockId: 7
+      validate: required  
+    - label: IMO Crew's Effects Declaration
+      type: checkbox
+      name: imoCrewsEffectsDeclaration
+      placeholder: 
+      help: Enter IMO Crew's Effects Declaration here
+      blockId: 7
+      validate: required
+    - label: IMO Crew List
+      type: checkbox
+      name: imoCrewList
+      placeholder: 
+      help: Enter IMO Crew List here
+      blockId: 7
+      validate: required
+    - label: IMO Passenger List
+      type: checkbox
+      name: imoPassengerList
+      placeholder: 
+      help: Enter IMO Passenger List here
+      blockId: 7
+      validate: required
+    - label: IMO Dangerous Goods Manifest
+      type: checkbox
+      name: imoDangerousGoodsManifest
+      placeholder: 
+      help: Enter IMO Dangerous Goods Manifest here
+      blockId: 7
+      validate: required
+    - label: ISPS
+      type: checkbox
+      name: isps
+      placeholder: 
+      help: Enter ISPS here
+      blockId: 7
+      validate: required 
+buttons:     
+    - type: button
+      value: Cancel 
+    - type: button
+      value: Save As Draft 
+    - type: submit
+      value: Submit      
+   
+
+
+
+
+
+
