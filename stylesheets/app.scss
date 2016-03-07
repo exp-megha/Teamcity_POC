@@ -1,0 +1,13 @@
+// import third-party/vendor files here
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap.scss";
+@import "../bower_components/font-awesome/scss/font-awesome.scss";
+
+// Partials
+@import "partials/variables";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/forms";
+@import "partials/main-layout.scss";
+@import "partials/devstyle.scss";
+
+
