@@ -36,8 +36,5 @@
     "compression": "^1.2.0",
     "grunt-angular-gettext": "^0.2.15",
     "middlewares": "^0.1.1"
-  },
-  "scripts": {
-    "postinstall": "bower install"
   }
 }
